@@ -59,8 +59,6 @@ const ModalWrapper = styled.div<{ open: boolean }>`
   padding: 20px;
   max-width: 450px;
   width: 100%;
-  // border-radius: 8px;
-  // box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   animation: ${({ open }) => (open === true ? fadeIn : fadeOut)} 0.3s forwards;
 `;
 
