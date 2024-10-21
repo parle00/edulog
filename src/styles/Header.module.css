@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid black;
+}
+
+.logoutButton {
+  border: none !important;
+}
+
+.logoutButton:hover {
+  opacity: 1 !important;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
