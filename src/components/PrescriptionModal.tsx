@@ -145,7 +145,7 @@ const PrescriptionModal = ({
                 errorMessage="Reçete giriniz."
               />
             </UpdatePatientFormInputsWrapper>
-            <EdulogButton type="submit">Ekle</EdulogButton>
+            <EdulogButton type="submit">Güncelle</EdulogButton>
           </EdulogForm>
         </ModalContent>
       </ModalWrapper>
