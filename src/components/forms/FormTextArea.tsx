@@ -1,8 +1,9 @@
 import React from "react";
 import { useController } from "react-hook-form";
 import EdulogInput from "../commons/EdulogInput";
+import EdulogTextArea from "../commons/EdulogTextArea";
 
-interface FormInputProps {
+interface FormTextAreaProps {
   name: string;
   control: any;
   required?: boolean;
@@ -15,7 +16,7 @@ interface FormInputProps {
   label?: string;
 }
 
-const FormInput = ({
+const FormTextArea = ({
   name,
   control,
   required,
@@ -25,8 +26,7 @@ const FormInput = ({
   errorMessage,
   label,
   placeholder,
-  type,
-}: FormInputProps) => {
+}: FormTextAreaProps) => {
   const { field, formState } = useController({
     name,
     control,
@@ -35,18 +35,17 @@ const FormInput = ({
     disabled: disabled,
   });
   return (
-    <EdulogInput
+    <EdulogTextArea
       valid={!!formState.errors[name]}
       name={name}
       placeholder={placeholder}
-      onChange={field.onChange}
       defaultValue={defaultValue}
+      onChange={field.onChange}
       disabled={disabled}
-      type={type}
       label={label}
       errorMessage={errorMessage}
     />
   );
 };
 
-export default FormInput;
+export default FormTextArea;

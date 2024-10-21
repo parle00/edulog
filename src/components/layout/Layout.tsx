@@ -10,7 +10,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const { user } = useAuth();
   const pathane = usePathname();
-  console.log();
+
   return (
     <>
       {user && pathane !== "/" && <Header />}

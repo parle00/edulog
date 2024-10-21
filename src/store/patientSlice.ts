@@ -23,13 +23,13 @@ export const patientSlice = createSlice({
         state.patients[index] = action.payload;
       }
     },
-    removePatient: (state, action: PayloadAction<string>) => {
-      state.patients = state.patients.filter((p) => p.id !== action.payload);
+    deletePatient: (state, action: PayloadAction<Patient>) => {
+      state.patients = state.patients.filter((p) => p.id !== action.payload.id);
     },
   },
 });
 
-export const { addPatient, updatePatient, removePatient } =
+export const { addPatient, updatePatient, deletePatient } =
   patientSlice.actions;
 
 export const selectPatients = (state: RootState) => state.patients.patients;

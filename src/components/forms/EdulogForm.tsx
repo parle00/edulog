@@ -1,4 +1,11 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 interface EdulogFormProps {
   children?: React.ReactNode;
@@ -16,14 +23,14 @@ const EdulogForm = ({
   autoComplete = false,
 }: EdulogFormProps) => {
   return (
-    <form
+    <StyledForm
       onSubmit={onSubmit}
       noValidate={validateDisabled}
       onKeyDown={onKeyDown}
       autoComplete={autoComplete ? "on" : "off"}
     >
       {children}
-    </form>
+    </StyledForm>
   );
 };
 

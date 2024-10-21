@@ -1,10 +1,5 @@
-.content {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.ul {
-  list-style: none;
+.tableContainer {
+  padding: 0 !important;
+  margin: 0 20px;
+  overflow-x: auto;
 }

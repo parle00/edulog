@@ -1,9 +1,12 @@
 .header {
-  border-bottom: 1px solid black;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 .logoutButton {
   border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoutButton:hover {
