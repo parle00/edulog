@@ -136,7 +136,6 @@ const PrescriptionModal = ({
                 errorMessage="Soyad giriniz."
               />
               <FormTextArea
-                required={true}
                 control={control}
                 name="prescription"
                 defaultValue={patientsItem?.prescription}

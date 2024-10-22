@@ -96,12 +96,10 @@ const NewPatientPage = () => {
                 errorMessage="Soyad giriniz."
               />
               <FormTextArea
-                required={true}
                 control={control}
                 name="prescription"
                 label="Reçete"
                 placeholder="Reçete"
-                errorMessage="Reçete giriniz."
               />
             </NewPatientFormInputsWrapper>
             <EdulogButton type="submit">Ekle</EdulogButton>
